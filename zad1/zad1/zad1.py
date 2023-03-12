@@ -17,6 +17,9 @@ def ceasar(s):
     n = len(s)
     curr_len, max_len = 1, 1
 
+    if n == 0:
+        return 0
+
     for i in range(1, n - 1):
         if s[i - 1] == s[i + 1]:
             j = 1
