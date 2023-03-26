@@ -53,7 +53,7 @@ def strong_string(T):
     merge_sort(T)
     n = len(T)
     curr_max_len, max_len, i = 1, 1, 1
-    while i + 1 < n:
+    while i < n:
         while i < n and (T[i][0] == T[i - 1][0] or T[i][0] == T[i - 1][1]):
             curr_max_len += 1
             i += 1
